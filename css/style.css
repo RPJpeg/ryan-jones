@@ -28,16 +28,17 @@ h6 {
 	color: #333333;
 }
 h1 {
-	font-size: 38px;
+	font-size: 42px;
 	font-weight: 700;
 	margin-bottom: 20px;
 }
 h2 {
-	font-size: 28px;
-	margin-bottom: 15px;
+	font-size: 42px;
+	margin-bottom: 20px;
+	font-weight: 300;
 }
 h3 {
-	font-size: 22px;
+	font-size: 32px;
 }
 h4 {
 	font-size: 18px;
@@ -103,7 +104,7 @@ blockquote {
 	padding-right: 0;
 }
 .title {
-	margin-top: 0;
+	margin-top: 30;
 }
 
 /* Layout
@@ -175,8 +176,31 @@ video {
 	padding: 40px 0;
 }
 .section {
-	background-color: white;
-	padding: 80px 0;
+	background-color: #131418;
+	padding: 0;
+	color: #E2DED8;
+}
+
+.section h2 {
+	color: white;
+	margin-top: 80px;
+}
+
+.bottom-border {
+	border: 0px solid #E21029;
+	border-bottom: 1px solid #E21029;
+	margin: 0 auto 5px auto;
+}
+
+.side-borders {
+	border: 0px solid #333333;
+	border-left: 1px solid #333333;
+	border-right: 1px solid #333333;
+}
+
+.line-spacers {
+	margin: 5px 0;
+	padding: 10px;
 }
 
 /* Backgrounds
@@ -185,6 +209,11 @@ video {
 	background-color: #222222;
 	color: white;
 }
+
+.dark-bg {
+	background-color: #131418;
+}
+
 .default-bg.blue {
 	background-color: #E21029;
 }
