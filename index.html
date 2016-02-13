@@ -6,6 +6,7 @@
 		<title>RPJpeg.com | Portfolio and Samples for Ryan Jones</title>
 		<meta name="description" content="Portfolio and Samples for Ryan Jones">
 		<meta name="author" content="RPJpeg">
+		<meta HTTP-EQUIV="X-UA-COMPATIBLE" CONTENT="IE=EmulateIE9" >
 
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,12 +20,14 @@
 		<!-- Bootstrap core CSS -->
 		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 
+		<!-- Radial Progress CSS -->
+		<link type="text/css" rel="stylesheet" href="css/radial.css">
+
 		<!-- Font Awesome CSS -->
 		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
 
 		<!-- Plugins -->
 		<link href="css/animations.css" rel="stylesheet">
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" rel="stylesheet">
 
 		<!-- Core CSS file -->
 		<link href="css/style.css" rel="stylesheet">
@@ -123,11 +126,11 @@
 			<div class="banner-caption">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
+						<div class="col-md-8 col-md-offset-2">
 							<div class="lead text-center">
-								<img class="icon-image-logo" src="images/rpjpeg_icon_white_wcircle.png" />
+								<img class="icon-image-logo object-non-visible" data-animation-effect="fadeInDown" src="images/rpjpeg_icon_white_wcircle.png" />
 							</div>
-							<p class="lead text-center">Creating beatiful, responsive websites.</p>
+							<p class="lead text-center object-non-visible" data-animation-effect="fadeInUp">Creating beatiful, responsive websites.</p>
 						</div>
 					</div>
 				</div>
@@ -188,15 +191,93 @@
 			<div class="space"></div>
 			<div class="space"></div>
 			<div class="space"></div>
+
 			<div class="container-fluid light-bg">
-				<div class="col-md-3">
-					<div class="skillbar clearfix" data-percent="70%">
-						<div class="skillbar-title" style="background: #88cd2a;"><span>HTML</span></div>
-						<div class="skillbar-bar" style="background: #88cd2a;"></div>
-						<div class="skill-bar-percent">70%</div>
+
+				<div class="space"></div>
+				<div class="space"></div>
+
+				<div class="col-md-12">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+					<div class="col-md-4 no-padding">
+						<div class="graph-box">
+						<div id="outer">
+					    <div id="main">
+					        <div id="skillhtml"></div>
+					    </div>
+						</div>
+						</div>
 					</div>
+
+					<div class="col-md-4 no-padding">
+						<div class="graph-box">
+						<div id="outer">
+							<div id="main">
+									<div id="skillcss"></div>
+							</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 no-padding">
+						<div class="graph-box">
+						<div id="outer">
+							<div id="main">
+									<div id="skilljs"></div>
+							</div>
+						</div>
+						</div>
+					</div>
+					</div>
+					<div class="col-md-2"></div>
 				</div>
+
+				<!-- new row -->
+
+				<div class="col-md-12">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+					<div class="col-md-4 no-padding">
+					<div class="graph-box">
+						<div id="outer">
+					    <div id="main">
+					        <div id="skillboot"></div>
+					    </div>
+						</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 no-padding">
+						<div class="graph-box">
+						<div id="outer">
+							<div id="main">
+									<div id="skillphotoshop"></div>
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 no-padding">
+						<div class="graph-box">
+						<div id="outer">
+							<div id="main">
+									<div id="skillillustrator"></div>
+							</div>
+						</div>
+						</div>
+					</div>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+				</div>
+				<div class="light-bg container-fluid">
+					<div class="space"></div>
+					<div class="space"></div>
 			</div>
+
+			</div>
+
 
 		</div>
 
@@ -1066,9 +1147,12 @@
 		<!-- Initialization of Plugins -->
 		<script type="text/javascript" src="js/template.js"></script>
 
+		<!-- Radial Progress javascript -->
+		<script type="text/javascript" src="js/d3.min.js"></script>
+    <script type="text/javascript" src="js/radialProgress.js"></script>
+
 		<!-- Custom Scripts -->
 		<script type="text/javascript" src="js/custom.js"></script>
-		<script type="text/javascript" src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 
 	</body>
 </html>

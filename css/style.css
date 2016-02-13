@@ -225,7 +225,6 @@ video {
 
 .light-bg {
 	background-color: #E2DED8;
-	height: 500px;
 }
 
 .default-bg.blue {
@@ -775,4 +774,15 @@ textarea {
 
 .fa-color-red {
 	color: #E21029;
+}
+
+.graph-box {
+	border: 1px solid #333333;
+	border-radius: 4px;
+	margin: 10px 50px;
+	padding: 0;
+}
+
+.no-padding {
+	padding: 0;
 }
