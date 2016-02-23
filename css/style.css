@@ -19,6 +19,7 @@ body {
 	background-color: #131418;
 	position: relative;
 }
+
 h1,
 h2,
 h3,
@@ -130,11 +131,6 @@ blockquote {
 	min-height: 100%;
 	position: relative;
 	color: white;
-}
-.banner-image {
-	vertical-align: middle;
-	min-height: 100%;
-	width: 100%;
 }
 
 video {
@@ -797,6 +793,7 @@ textarea {
 	background-size: cover;
 	overflow: hidden;
   display: inline-block;
+	position: relative;
 
 }
 
