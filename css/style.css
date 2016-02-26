@@ -16,7 +16,6 @@ body {
 	font-size: 15px;
 	line-height: 1.50;
 	color: #333333;
-	background-color: #131418;
 	position: relative;
 }
 
@@ -47,8 +46,9 @@ h3 {
 	color: white;
 }
 h4 {
-	font-size: 18px;
-	font-weight: 700;
+	font-size: 22px;
+	font-weight: 500;
+	padding-bottom: 20px;
 }
 h5 {
 	font-size: 16px;
@@ -217,6 +217,15 @@ video {
 
 .dark-bg {
 	background-color: #131418;
+}
+
+.tahoe-bg {
+	background-image: url("../images/tahoe.jpg");
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	position:relative;
+	background-size: cover;
 }
 
 .light-bg {
@@ -820,5 +829,74 @@ textarea {
 .preston-site {
 	width:100%;
 	height:300px;
+}
 
+.dark-text {
+	color: #131418;
+}
+
+.green-text {
+	color: #00A59D;
+}
+
+.grid-box {
+	width:
+}
+
+.geo {
+	width: 60%;
+	min-width: 100px;
+	max-width: 150px;
+	margin: 0 auto;
+}
+
+.geo:hover {
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	transform: rotate(30deg);
+}
+
+.new-overlay {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.light-text {
+	color: #E2DED8;
+	z-index: 100;
+	position: relative;
+}
+
+.geo-box {
+	padding: 25px 25px 50px 25px;
+}
+
+.po-co {
+	padding: 0 50px;
+}
+
+.title {
+	position: relative;
+	z-index: 102;
+}
+
+.port-box {
+	margin: 25px auto 50px auto;
+}
+
+.port-text-box {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	max-width: 350px;
+}
+
+.p-limiter {
+	max-width: 650px;
+	margin: 0 auto;
 }
