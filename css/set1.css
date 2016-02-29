@@ -25,7 +25,6 @@
 	position: relative;
 	width: 500px;
 	overflow: hidden;
-
 }
 
 .grid figure figcaption {
@@ -172,15 +171,57 @@ figure.effect-layla:hover figcaption::after {
 	transition: all 0.2s ease-in-out;
 }
 
-figure.effect-layla:hover h2,
 figure.effect-layla:hover p {
+	opacity: 1;
+	margin-top: 10px;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-layla h3 {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
 
+@media screen and (min-width: 1px) {
+	figure.effect-layla p, figure.effect-layla:hover p, .grid p {
+			display: block;
+			font-size: 68.5%;
+    }
+
+		figure.effect-layla h3, figure.effect-layla:hover h3, .grid h3 {
+			font-size: 26px;
+			margin-top: 35%;
+
+		}
+}
+
+@media screen and (min-width: 990px) {
+	figure.effect-layla p, figure.effect-layla:hover p, .grid p {
+		display: none;
+	}
+
+	figure.effect-layla h3, figure.effect-layla:hover h3, .grid h3 {
+		/*margin-top: 10%;*/
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 1380px) {
+	figure.effect-layla p, figure.effect-layla:hover p, .grid p {
+			display: block;
+			font-size: 45%;
+    }
+
+		figure.effect-layla h3, figure.effect-layla:hover h3, .grid h3 {
+			font-size: 23px;
+			margin-top: 25%;
+		}
+}
+
+
 figure.effect-layla:hover figcaption::after,
-figure.effect-layla:hover h2,
 figure.effect-layla:hover p,
 figure.effect-layla:hover img {
 	-webkit-transition-delay: 0.05s;

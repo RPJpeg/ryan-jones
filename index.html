@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
 		<title>RPJpeg.com | Portfolio &amp; Samples for Ryan Jones</title>
@@ -12,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="images/rpjpeg_favicon.png">
+		<link rel="shortcut icon" href="images/rpj-favicon.png">
 
 		<!-- Web Fonts -->
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,100,300,900' rel='stylesheet' type='text/css'>
@@ -26,6 +25,7 @@
 		<!-- Plugins -->
 		<link href="css/set1.css" rel="stylesheet">
 		<link href="css/animations.css" rel="stylesheet">
+		<link href="css/stagger.css" rel="stylesheet">
 
 		<!-- Core CSS file -->
 		<link href="css/style.css" rel="stylesheet">
@@ -92,6 +92,8 @@
 												<li><a href="#portfolio">Portfolio</a></li>
 												<li><a href="#experience">Experience</a></li>
 												<li><a href="#contact">Contact</a></li>
+												<li data-toggle="tooltip" data-placement="bottom" title="Check out my Resume"><a href="resume.html" target="_blank"><i class="fa fa-file-text-o"></i>
+												</a></li>
 											</ul>
 										</div>
 
@@ -222,7 +224,6 @@
 			<div class="space"></div>
 
 			<div class="container-fluid light-bg">
-
 				<div class="containter">
 
 					<div class="space"></div>
@@ -237,7 +238,43 @@
 							<p class="dark-text">Hopefully you'll agree and I can work on a project for you!</p>
 						</div>
 						<div class="col-md-4 col-sm-10">
-							<img src="http://placehold.it/350x350" class="port-box">
+							<br>
+							<br>
+							<div class="progress">
+							  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="pb-html">
+							    HTML
+							  </div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="pb-css">
+							    CSS
+							  </div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="pb-js">
+							    Javascript/jQeury
+							  </div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="pb-boot">
+							    Bootstrap
+							  </div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="pb-wp">
+									Wordpress
+								</div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="pb-ps">
+									Photoshop
+								</div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="pb-ai">
+									Illustrator
+								</div>
+							</div>
 						</div>
 						<div class="col-md-2 col-sm-1"></div>
 					</div>
@@ -246,7 +283,6 @@
 					<div class="space"></div>
 
 				</div>
-
 				<div class="light-bg container-fluid">
 					<div class="space"></div>
 					<div class="space"></div>
@@ -264,6 +300,7 @@
 		<!-- ================ -->
 	<div class="clearfix">
 		<div class="container-fluid tahoe-bg">
+			<div class="container">
 			<div class="new-overlay"></div>
 			<h1 id="portfolio" class="title text-center object-non-visible" data-animation-effect="fadeInDown">Portfolio</h1>
 
@@ -274,8 +311,9 @@
 			<p class="lead text-center light-text p-limiter">Some examples of my web design work.  These are either samples that I have put together to show what I can create for you, or examples of work that I have created for some of my previous clients.</p>
 			<div class="space"></div>
 
+			<div class="wrapper">
 			<div class="col-xs-12 po-co">
-				<div class="row">
+				<div class="row clearfix">
 					<div class="col-md-3 col-sm-12 geo-box"><img class="geo center-block object-non-visible" data-animation-effect="zoomIn" src="images/geo1.png" /></div>
 					<div class="col-md-3 hidden-sm hidden-xs geo-box"><img class="geo center-block object-non-visible" data-animation-effect="zoomIn" src="images/geo2.png" /></div>
 					<div class="col-md-3 hidden-sm hidden-xs geo-box"><img class="geo center-block object-non-visible" data-animation-effect="zoomIn" src="images/geo3.png" /></div>
@@ -283,58 +321,242 @@
 				</div>
 			</div>
 
-
-			<div class="container-fluid">
-
 				<div class="space"></div>
 				<div class="space"></div>
 
 					<div class="grid col-md-3 col-sm-6 col-xs-12">
+						<a href="#/" id="open-preston-modal">
 						<figure class="effect-layla">
-							<img src="images/mountains.jpg" alt="test"/>
+							<img src="images/mountains.jpg" alt="Preston Wealth Management" />
 							<figcaption>
-								<h3>Preston</h3>
-								<p>Created using Bootstrap, HTML, CSS and Javascript</p>
+								<h3>Preston<br>Wealth</h3>
 							</figcaption>
 						</figure>
+						</a>
 					</div>
+
+<!-- Modal -->
+
+					<div class="modal fade bs-example-modal-lg" id="preston-modal" tabindex="-1" role="dialog" aria-labelledby="preston-modal-label">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title" id="preston-modal-label">Preston Wealth Management</h4>
+					      </div>
+					      <div class="modal-body">
+
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="modal-img-box"><img src="images/mountains.jpg" alt="Preston Wealth Management" class="center-block"/></div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-2"></div>
+										<div class="col-xs-8">
+											<a href="http://rpjpeg.github.io/new-preston/" target="_blank">
+												<button type="button" class="btn btn-default btn-special"><i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;Launch Site</button>
+											</a>
+										</div>
+										<div class="col-xs-2"></div>
+								</div>
+										<div class="row">
+											<div class="col-xs-1"></div>
+											<div class="col-xs-10">
+												<p>This page was created for Preston Wealth Managment, a company stationed here in the DC Metro area. This site was used with a combination of HTML, CSS and Javascript/jQuery.  The Bootstrap framework was utilized in the creation.<br><br>
+												A fixed header, scroll spy, and modals were a few things used to enhance the easy of navigation.  The site is fully responsive, working well on large screens as well as mobile devices. Finally, a contact form was created, to be able to receive information from their potential clients.</p>
+												<p><em>Created around December 2015</em></p>
+											</div>
+											<div class="col-xs-1"></div>
+										</div>
+
+									</div>
+
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					      </div>
+
+					    </div>
+					  </div>
+					</div>
+
+<!-- Modal End -->
 
 					<div class="grid col-md-3 col-sm-6 col-xs-12">
-						<figure class="effect-layla">
-							<img src="images/mountains.jpg" alt="test"/>
-							<figcaption>
-								<h3>Preston</h3>
-								<p>Created using Bootstrap, HTML, CSS and Javascript</p>
-							</figcaption>
-						</figure>
+						<a href="#/" id="open-kitten-modal">
+							<figure class="effect-layla">
+								<img src="images/kitten.jpg" alt="test"/>
+								<figcaption>
+									<h3>Kitten<br>Crew</h3>
+								</figcaption>
+							</figure>
+						</a>
 					</div>
+
+					<!-- Modal -->
+
+										<div class="modal fade bs-example-modal-lg" id="kitten-modal" tabindex="-1" role="dialog" aria-labelledby="kitten-modal-label">
+										  <div class="modal-dialog" role="document">
+										    <div class="modal-content">
+										      <div class="modal-header">
+										        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										        <h4 class="modal-title" id="kitten-modal-label">Kitten Crew</h4>
+										      </div>
+										      <div class="modal-body">
+
+														<div class="row">
+															<div class="col-xs-12">
+																<div class="modal-img-box"><img src="images/kitten.jpg" alt="test"/></div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-xs-2"></div>
+															<div class="col-xs-8">
+																<a href="sites/kitten-club/membership.html" target="_blank">
+																	<button type="button" class="btn btn-default btn-special"><i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;Launch Site</button>
+																</a>
+															</div>
+															<div class="col-xs-2"></div>
+													</div>
+															<div class="row">
+																<div class="col-xs-1"></div>
+																<div class="col-xs-10">
+																	<p>This sample page was created shortly after I completed my class on Front-end Web Development at General Assembly.  I used it to show that I am comfortable using image grids and buttons. I also demonstrated that I can effectively use image carousels.  This is a good example page of something I could create that uses a login or sign up page, when paired with some back-end development.</p>
+																	<p><em>Created around October 2015</em></p>
+																</div>
+																<div class="col-xs-1"></div>
+															</div>
+
+														</div>
+
+										      <div class="modal-footer">
+										        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										      </div>
+
+										    </div>
+										  </div>
+										</div>
+
+					<!-- Modal End -->
 
 					<div class="grid col-md-3 col-sm-6 col-xs-12">
-						<figure class="effect-layla">
-							<img src="images/mountains.jpg" alt="test"/>
-							<figcaption>
-								<h3>Preston</h3>
-								<p>Created using Bootstrap, HTML, CSS and Javascript</p>
-							</figcaption>
-						</figure>
+						<a href="#/" id="open-tech-modal">
+							<figure class="effect-layla">
+								<img src="images/ph-inc.jpg" alt="Sample Startup Page for RPJpeg"/>
+								<figcaption>
+									<h3>Tech<br>Startup</h3>
+								</figcaption>
+							</figure>
+						</a>
 					</div>
+
+					<!-- Modal -->
+
+					<div class="modal fade bs-example-modal-lg" id="tech-modal" tabindex="-1" role="dialog" aria-labelledby="tech-modal-label">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="tech-modal-label">Placeholder Inc.</h4>
+								</div>
+								<div class="modal-body">
+
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="modal-img-box"><img src="images/ph-inc.jpg" alt="Sample Startup Page for RPJpeg"/></div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-2"></div>
+										<div class="col-xs-8">
+											<a href="sites/startup-project/startup.html" target="_blank">
+												<button type="button" class="btn btn-default btn-special"><i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;Launch Site</button>
+											</a>
+										</div>
+										<div class="col-xs-2"></div>
+								</div>
+										<div class="row">
+											<div class="col-xs-1"></div>
+											<div class="col-xs-10">
+												<p>This is another page I created to get some practice in. This is a relatively simple page, but I think it does a good job of showing how sometimes simplicity can go a long way.  I think this page looks clean, professional and is easy to navigate. As always, it is mobile responsive!</p>
+												<p><em>Created around November 2015</em></p>
+											</div>
+											<div class="col-xs-1"></div>
+										</div>
+
+									</div>
+
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- Modal End -->
 
 					<div class="grid col-md-3 col-sm-6 col-xs-12">
-						<figure class="effect-layla">
-							<img src="images/mountains.jpg" alt="test"/>
-							<figcaption>
-								<h3>Preston</h3>
-								<p>Created using Bootstrap, HTML, CSS and Javascript</p>
-							</figcaption>
-						</figure>
+						<a href="#/" id="open-trendy-modal">
+							<figure class="effect-layla">
+								<img src="images/trendy.jpg" alt="The Latest Trends at RPJpeg"/>
+								<figcaption>
+									<h3>Trendy<br>Site!</h3>
+								</figcaption>
+							</figure>
+						</a>
 					</div>
 
-				<div class="space"></div>
-				<div class="space"></div>
+					<!-- Modal -->
 
+					<div class="modal fade bs-example-modal-lg" id="trendy-modal" tabindex="-1" role="dialog" aria-labelledby="trendy-modal-label">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="trendy-modal-label">Very Trendy!</h4>
+								</div>
+								<div class="modal-body">
+
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="modal-img-box"><img src="images/trendy.jpg" alt="The Latest Trends at RPJpeg"/></div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-2"></div>
+										<div class="col-xs-8">
+											<a href="sites/very-trendy/index.html" target="_blank">
+												<button type="button" class="btn btn-default btn-special"><i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;Launch Site</button>
+											</a>
+										</div>
+										<div class="col-xs-2"></div>
+								</div>
+										<div class="row">
+											<div class="col-xs-1"></div>
+											<div class="col-xs-10">
+												<p>In this example, I created a site that uses a lot of the popular trends in today's web design community. There are slide-ins, popovers and even a video looped cover page.  Another thing I think that really works well in this sample page, is the use of paralax images.  Each image scrolls at a different rate, to give the illusion of depth.</p>
+												<p><em>Created around January 2016</em></p>
+											</div>
+											<div class="col-xs-1"></div>
+										</div>
+
+									</div>
+
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- Modal End -->
 
 			</div>
 
+		</div>
+		</div>
 		</div>
 	</div>
 
@@ -343,27 +565,333 @@
 
 		<!-- section start -->
 		<!-- ================ -->
-				<h1 id="clients" class="title text-center">Clients</h1>
-			<!-- section start -->
-			<!-- ================ -->
-			<div class="translucent-bg blue">
-			</div>
-			<!-- section end -->
-		<!-- section start -->
-		<!-- ================ -->
-		<div class="default-bg space">
-		</div>
-		<!-- section end -->
+	<div class="clearfix">
+		<div class="container-fluid dark-bg">
+			<div class="container">
+			<h1 id="experience" class="title text-center object-non-visible" data-animation-effect="fadeInDown">Experience</h1>
 
+			<div class="col-md-5 line-spacers"></div>
+			<div class="bottom-border col-md-2"></div>
+			<div class="col-md-5 line-spacers"></div>
+
+			<p class="lead text-center light-text p-limiter">Let's take a journey through my timeline...</p>
+			<div class="space"></div>
+
+			<div class="container">
+				<img class="profile-pic center-block" src="images/ryan-face-1.jpg" alt="Recent Pic of Me">
+
+<!-- Timeline for Larger Screens - Left Side -->
+
+				<div class="row">
+				<div class="col-sm-6 hidden-xs half-time-l">
+					<br>
+					<div class="media object-non-visible" data-animation-effect="fadeInLeft">
+						<div class="media-left">
+					      <i class="fa fa-thumbs-up"></i>
+					  </div>
+					  <div class="media-body light-text">
+					    <h4 class="media-heading">Became an Associate Manager at CustomInk LLC</h4>
+					    After working in the Art Department for about 3 and a half years, I was promoted into the role of Associate Manager. In this role that I still currently hold, I directly manage a team of about 9 artists as they work on artwork primarily in Adobe Illustrator.<br><br>
+							<em>November 2015 | Fairfax, VA</em>
+					  </div>
+					</div>
+
+					<br>
+					<div class="media object-non-visible" data-animation-effect="fadeInLeft">
+						<div class="media-left">
+								<i class="fa fa-users"></i>
+						</div>
+						<div class="media-body light-text">
+							<h4 class="media-heading">Became a Team Lead at CustomInk LLC</h4> After about a year working in the Art Department at CustomInk, I took on the role of CustomInk Team Lead.  Here I helped others on my team learn best tools, methods and best practices when using Adobe Illustrator.  I also helped in training new hires, as they were introduced to the role.<br><br>
+							<em>January 2013 | McLean, VA</em>
+						</div>
+					</div>
+
+					<br>
+					<div class="media object-non-visible" data-animation-effect="fadeInLeft">
+						<div class="media-left">
+					      <i class="fa fa-child"></i>
+					  </div>
+					  <div class="media-body light-text">
+					    <h4 class="media-heading">Hired at CustomInk LLC</h4>
+					    I was hired to work at CustomInk LLC in McLean, VA!<br><br>
+							<em>June 2010 | McLean, VA</em>
+					  </div>
+					</div>
+
+					<br>
+					<div class="media object-non-visible" data-animation-effect="fadeInLeft">
+						<div class="media-left">
+					      <i class="fa fa-plane"></i>
+					  </div>
+					  <div class="media-body light-text">
+					    <h4 class="media-heading">Moved across the Country!</h4>
+					    I took a risk and moved across the country, from Oregon to DC, in hopes of opening more opportunities that would improve my professional development.<br><br>
+							<em>March 2008 | Washington, DC</em>
+					  </div>
+					</div>
+
+					<br>
+					<div class="media object-non-visible" data-animation-effect="fadeInLeft">
+						<div class="media-left">
+					      <i class="fa fa-road"></i>
+					  </div>
+					  <div class="media-body light-text">
+					    <h4 class="media-heading">Graphic Design Internship for Sound Publishing</h4>
+					    First job out of College!  Moved up to the Seattle area temporarily to work at a small publication company.  I helped them with design layout for coupons, newspapers and flyers for areas just outside of Seattle.<br><br>
+							<em>June 2006 | Lynnwood, WA</em>
+					  </div>
+					</div>
+
+<!-- Timeline for Larger Screens - Right Side - -->
+
+			</div>
+				<div class="col-sm-6 hidden-xs half-time-r">
+					<br>
+
+					<div class="media object-non-visible" data-animation-effect="fadeInRight">
+					  <div class="media-body light-text">
+					    <h4 class="media-heading">Completed 10 week course on Front-End Web Development</h4>
+							Development at the General Assembly campus in Washington DC.  This class covered a wide range of functions and styles using HTML, CSS, Javascript, jQuery and Bootstrap.  I also became very familiar with Github and many other extremely useful developer tools during this time.<br><br>
+							<em>September 2015 | Washington, DC</em>
+					  </div>
+						<div class="media-right">
+							<i class="fa fa-code"></i>
+						</div>
+					</div>
+
+					<br>
+					<div class="media object-non-visible" data-animation-effect="fadeInRight">
+					  <div class="media-body light-text">
+					    <h4 class="media-heading">Moved over to the Art Department at CustomInk</h4>
+							After spending quite a bit of time in the Service and Sales department at CustomInk, I decided to make a move over to the Art Department, focusing more on work that is closer to my goals and interests.<br><br>
+							<em>January 2012 | McLean, VA</em>
+					  </div>
+						<div class="media-right">
+							<i class="fa fa-paint-brush"></i>
+						</div>
+					</div>
+
+					<br>
+					<div class="media object-non-visible" data-animation-effect="fadeInRight">
+					  <div class="media-body light-text">
+					    <h4 class="media-heading">Began working for Bioware/Mythic Entertainment</h4>
+							During my time working for Bioware/Mythic Entertainment, I had a great time working with great people.  I was able to fine-tune by email/chat support customer service skills and really get used to fast-paced, production-based work.<br><br>
+							<em>August 2008 | Fairfax, VA</em>
+					  </div>
+						<div class="media-right">
+							<i class="fa fa-fire"></i>
+						</div>
+					</div>
+					<br>
+
+					<div class="media object-non-visible" data-animation-effect="fadeInRight">
+					  <div class="media-body light-text">
+					    <h4 class="media-heading">Graphic design internship at Brass Media LLC</h4>
+							Helped out the graphic design team at Brass Magazine with their quarterly magazine. Created logos, illustrations and layouts for articles within said magazine.  Great experience working with print!<br><br>
+							<em>December 2007 | Corvallis, OR</em>
+					  </div>
+						<div class="media-right">
+							<i class="fa fa-book"></i>
+						</div>
+					</div>
+
+					<br>
+					<div class="media object-non-visible" data-animation-effect="fadeInRight">
+					  <div class="media-body light-text">
+					    <h4 class="media-heading">Graduated College!</h4>
+							Graduated from the University of Oregon during the summer of 2006.  I received a Bachelor of Arts in Digital Art for my time spent here. I studied a variety of art styles, design tool applications and even web development, which is what I do now!<br><br>
+							<em>June 2006 | Eugene, OR</em>
+					  </div>
+						<div class="media-right">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+					</div>
+
+				</div>
+
+<!-- Timeline for Smaller Screens -->
+
+<div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+	<br>
+	<div class="media object-non-visible" data-animation-effect="fadeInLeft">
+		<div class="media-left">
+				<i class="fa fa-thumbs-up"></i>
+		</div>
+		<div class="media-body light-text">
+			<h4 class="media-heading">Became an Associate Manager at CustomInk LLC</h4>
+			After working in the Art Department for about 3 and a half years, I was promoted into the role of Associate Manager. In this role that I still currently hold, I directly manage a team of about 9 artists as they work on artwork primarily in Adobe Illustrator.<br><br>
+			<em>November 2015 | Fairfax, VA</em>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="media object-non-visible" data-animation-effect="fadeInRight">
+		<div class="media-body light-text">
+			<h4 class="media-heading">Completed 10 week course on Front-End Web Development</h4>
+			Development at the General Assembly campus in Washington DC.  This class covered a wide range of functions and styles using HTML, CSS, Javascript, jQuery and Bootstrap.  I also became very familiar with Github and many other extremely useful developer tools during this time.<br><br>
+			<em>September 2015 | Washington, DC</em>
+		</div>
+		<div class="media-right">
+			<i class="fa fa-code"></i>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="media object-non-visible" data-animation-effect="fadeInLeft">
+		<div class="media-left">
+				<i class="fa fa-users"></i>
+		</div>
+		<div class="media-body light-text">
+			<h4 class="media-heading">Became a Team Lead at CustomInk LLC</h4> After about a year working in the Art Department at CustomInk, I took on the role of CustomInk Team Lead.  Here I helped others on my team learn best tools, methods and best practices when using Adobe Illustrator.  I also helped in training new hires, as they were introduced to the role.<br><br>
+			<em>January 2013 | McLean, VA</em>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="media object-non-visible" data-animation-effect="fadeInRight">
+		<div class="media-body light-text">
+			<h4 class="media-heading">Moved over to the Art Department at CustomInk</h4>
+			After spending quite a bit of time in the Service and Sales department at CustomInk, I decided to make a move over to the Art Department, focusing more on work that is closer to my goals and interests.<br><br>
+			<em>January 2012 | McLean, VA</em>
+		</div>
+		<div class="media-right">
+			<i class="fa fa-paint-brush"></i>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="media object-non-visible" data-animation-effect="fadeInLeft">
+		<div class="media-left">
+				<i class="fa fa-child"></i>
+		</div>
+		<div class="media-body light-text">
+			<h4 class="media-heading">Hired at CustomInk LLC</h4>
+			I was hired to work at CustomInk LLC in McLean, VA!<br><br>
+			<em>June 2010 | McLean, VA</em>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="media object-non-visible" data-animation-effect="fadeInRight">
+		<div class="media-body light-text">
+			<h4 class="media-heading">Began working for Bioware/Mythic Entertainment</h4>
+			During my time working for Bioware/Mythic Entertainment, I had a great time working with great people.  I was able to fine-tune by email/chat support customer service skills and really get used to fast-paced, production-based work.<br><br>
+			<em>August 2008 | Fairfax, VA</em>
+		</div>
+		<div class="media-right">
+			<i class="fa fa-fire"></i>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="media object-non-visible" data-animation-effect="fadeInLeft">
+		<div class="media-left">
+				<i class="fa fa-plane"></i>
+		</div>
+		<div class="media-body light-text">
+			<h4 class="media-heading">Moved across the Country!</h4>
+			I took a risk and moved across the country, from Oregon to DC, in hopes of opening more opportunities that would improve my professional development.<br><br>
+			<em>March 2008 | Washington, DC</em>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="media object-non-visible" data-animation-effect="fadeInRight">
+		<div class="media-body light-text">
+			<h4 class="media-heading">Graphic design internship at Brass Media LLC</h4>
+			Helped out the graphic design team at Brass Magazine with their quarterly magazine. Created logos, illustrations and layouts for articles within said magazine.  Great experience working with print!<br><br>
+			<em>December 2007 | Corvallis, OR</em>
+		</div>
+		<div class="media-right">
+			<i class="fa fa-book"></i>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="media object-non-visible" data-animation-effect="fadeInLeft">
+		<div class="media-left">
+				<i class="fa fa-road"></i>
+		</div>
+		<div class="media-body light-text">
+			<h4 class="media-heading">Graphic Design Internship for Sound Publishing</h4>
+			First job out of College!  Moved up to the Seattle area temporarily to work at a small publication company.  I helped them with design layout for coupons, newspapers and flyers for areas just outside of Seattle.<br><br>
+			<em>June 2006 | Lynnwood, WA</em>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="media object-non-visible" data-animation-effect="fadeInRight">
+		<div class="media-body light-text">
+			<h4 class="media-heading">Graduated College!</h4>
+			Graduated from the University of Oregon during the summer of 2006.  I received a Bachelor of Arts in Digital Art for my time spent here. I studied a variety of art styles, design tool applications and even web development, which is what I do now!<br><br>
+			<em>June 2006 | Eugene, OR</em>
+		</div>
+		<div class="media-right">
+			<i class="fa fa-graduation-cap"></i>
+		</div>
+	</div>
+	<br><br>
+</div>
+
+
+<!-- End of the Timeline -->
+
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
+		<!-- section end -->
 		<!-- footer start -->
 		<!-- ================ -->
 		<footer id="footer">
-
 			<!-- .footer start -->
 			<!-- ================ -->
 			<div class="footer section">
-				<div class="container">
-					<h1 class="title text-center" id="contact">Contact Us</h1>
+
+				<div class="clearfix">
+					<div class="container-fluid light-bg">
+					<div class="container">
+						<h1 id="contact" class="title dark-text text-center object-non-visible" data-animation-effect="fadeInDown">Contact Me</h1>
+
+						<div class="col-md-5 line-spacers"></div>
+						<div class="bottom-border col-md-2"></div>
+						<div class="col-md-5 line-spacers"></div>
+
+						<p class="lead text-center p-limiter dark-text">Hopefully you've enjoyed what you've seen so far.  If you'd like to ask me any questions, talk about working together in the future or just want to say <em>"Hi!"</em> then please email me!</p>
+						<div class="space"></div>
+
+						<div class="row">
+							<div class="col-sm-6 col-xs-12">
+								<div class="box-top center-block">
+									<a href="#banner" class="smooth-scroll"><img class="center-block footer-logo object-non-visible" data-animation-effect="fadeInUp" src="images/rpjpeg_logo_small_dol.png" /></a>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-12">
+								<div class="box-top center-block">
+									<div class="footer-link">
+										<h3 class="text-center object-non-visible dark-text" data-animation-effect="fadeInUp">
+										<i class="fa fa-envelope-o dark-text"></i>
+										<br>
+										Send me an Email!<br>
+										<p class="text-center dark-text"><strong>RyanJones83@gmail.com</strong></p>
+										</h3>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				</div>
 			</div>
 			<!-- .footer end -->
@@ -373,8 +901,11 @@
 			<div class="subfooter">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12">
-							<p class="text-center">Copyright © 2014 Worthy by <a target="_blank" href="http://htmlcoder.me">HtmlCoder</a>.</p>
+						<div class="col-xs-6">
+							<p class="text-left dark-text">Copyright © 2016 | <mark>RPJpeg.com</mark></p>
+						</div>
+						<div class="col-xs-6">
+							<p class="text-right"><a href="#banner" class="smooth-scroll">Back to the Top &nbsp; <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a></p>
 						</div>
 					</div>
 				</div>

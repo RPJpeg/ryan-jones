@@ -1,0 +1,336 @@
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+}
+
+html {
+}
+
+body {
+  background-color: #EAEAEA;
+  font-family: 'Andada', serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.container {
+  background-color: #F3F8FC;
+  padding: 0;
+  box-shadow: 3px 0 8px -4px black, -3px 0 8px -4px black;
+
+}
+
+header {
+  background-color: #1C2731;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  line-height: 20px;
+  margin-bottom: 30px;
+  min-height: 50px;
+  opacity: 0.95;
+  position: fixed;
+  box-shadow: 1px 1px 2px black;
+  z-index: 1000;
+}
+
+.image-container {
+  padding: 20px;
+}
+
+.header-logo {
+  width: 100%;
+  max-width: 300px;
+}
+
+.button-box {
+  width: 50%;
+}
+
+.btn {
+  margin: 20px auto;
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav li{
+    display:inline;
+}
+
+.nav a{
+    display:inline-block;
+}
+
+.btn-primary {
+  background-color: #F16722;
+  border: 0px;
+  transition: all 0.35s ease;
+}
+
+.btn-primary:hover {
+  background-color: #F7A41A;
+}
+
+.btn-link {
+  color: white;
+  transition: all 0.35s ease;
+}
+
+.btn-link:hover {
+  color: white;
+}
+
+main {
+  width: 100%;
+  box-shadow: 3px 0 8px -4px black, -3px 0 8px -4px black;
+  background-image: url("../img/kitten.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main h1 {
+  font-size: 48px;
+  color: #F7A41A;
+  font-weight: 500;
+}
+
+main h3 {
+  color: white;
+}
+
+section h3 {
+  color: #F7A41A;
+}
+
+.btn-outline {
+  background: transparent;
+  border-radius: 1px;
+  outline: #0098CC solid 3px;
+  padding: 8px;
+  transition: all 0.35s ease;
+}
+
+.btn-outline:hover {
+  background-color: #0098CC;
+  border-radius: 1px;
+  outline: #0098CC solid 3px;
+  color: white;
+}
+
+.top-spacer {
+  margin-top: 150px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 5px;
+  padding: 25px;
+  margin-bottom: 60px;
+}
+
+.slight-spacer {
+  margin-top: 80px;
+}
+
+.white-box {
+  background-color: #EAEAEA;
+  border-radius: 5px;
+  box-shadow: 0 0 10px black;
+}
+
+.white-box p {
+  padding: 15px;
+}
+
+section {
+  margin-top: 100px;
+}
+
+section h2, .photo-section h2 {
+  color: #0098CC;
+}
+
+section p, section h3, .photo-section p {
+  padding: 10px 0 10px 0;
+  margin: 0 20px;
+}
+
+.text-container {
+  width: 50%;
+  min-width: 300px;
+}
+
+article {
+  margin-top: 100px;
+  background-color: #1C2731;
+}
+
+article h2 {
+  color: #0098CC;
+  padding: 50px;
+}
+
+.adj-white-h3 {
+  color: #F7A41A;
+  padding: 50px 50px 20px 50px;
+}
+
+article img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+article li {
+  color: white;
+  font-size: 18px;
+  margin-left: 60px;
+}
+
+.bottom-spacer {
+  margin-bottom: 120px;
+}
+
+.photo-section {
+  margin-top: 100px;
+}
+
+.photo-section img {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.photo-section h3 {
+  padding: 20px;
+  background-color: #F7A41A;
+  margin: 0 20px;
+}
+
+.photo-grid {
+  margin-top: 50px;
+}
+
+.last-section {
+  background-image: url("../img/cat-island.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 100px;
+  box-shadow: 3px 0 8px -4px black, -3px 0 8px -4px black;
+}
+
+.last-section .top-spacer {
+  margin-top: 100px;
+  background: transparent;
+  color: white;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+blockquote footer {
+  margin-top: 0;
+}
+
+footer div {
+  padding: 0 20px;
+}
+
+footer img {
+  margin-bottom: 10px;
+  width: 50%;
+  min-width: 200px;
+}
+
+footer li {
+  text-align: left;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.slide-padding {
+  padding: 10px 0 0 25px;
+}
+
+#slides {
+  display: none
+}
+
+.slides img {
+  border-radius: 5px;
+}
+
+#slides .slidesjs-navigation {
+  margin-top:3px;
+}
+
+#slides .slidesjs-previous {
+  margin-right: 5px;
+  float: left;
+}
+
+#slides .slidesjs-next {
+  margin-right: 5px;
+  float: left;
+}
+
+.slidesjs-pagination {
+  margin: 6px 0 0;
+  float: right;
+  list-style: none;
+}
+
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(../img/pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px
+}
+
+#slides a:link,
+#slides a:visited {
+  color: #333
+}
+
+#slides a:hover,
+#slides a:active {
+  color: #9e2020
+}
+
+.navbar {
+  overflow: hidden
+}

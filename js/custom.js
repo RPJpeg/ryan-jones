@@ -1,96 +1,69 @@
-    var skillhtml=d3.select(document.getElementById('skillhtml'));
-    var skillcss=d3.select(document.getElementById('skillcss'));
-    var skilljs=d3.select(document.getElementById('skilljs'));
-    var skillhtml=d3.select(document.getElementById('skillboot'));
-    var skillcss=d3.select(document.getElementById('skillphotoshop'));
-    var skilljs=d3.select(document.getElementById('skillillustrator'));
 
-    start();
+// Progress
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1500) {
 
-    function onClick1() {
-        deselect();
-        skillhtml.attr("class","selectedRadial");
-    }
+    $("#pb-html").animate({
+        width: "95%"
+    }, 1150);
 
-    function onClick2() {
-        deselect();
-        skillcss.attr("class","selectedRadial");
-    }
+    $("#pb-css").animate({
+        width: "87%"
+    }, 1150);
 
-    function onClick3() {
-        deselect();
-        skilljs.attr("class","selectedRadial");
-    }
-    function onClick4() {
-        deselect();
-        skillhtml.attr("class","selectedRadial");
-    }
+    $("#pb-js").animate({
+        width: "71%"
+    }, 1150);
 
-    function onClick5() {
-        deselect();
-        skillcss.attr("class","selectedRadial");
-    }
+    $("#pb-boot").animate({
+        width: "95%"
+    }, 1150);
 
-    function onClick6() {
-        deselect();
-        skilljs.attr("class","selectedRadial");
-    }
+    $("#pb-wp").animate({
+        width: "40%"
+    }, 1150);
 
-    function labelFunction(val,min,max) {
+    $("#pb-ps").animate({
+        width: "78%"
+    }, 1150);
 
-    }
+    $("#pb-ai").animate({
+        width: "95%"
+    }, 1150);
 
-    function deselect() {
-        skillhtml.attr("class","radial");
-        skillcss.attr("class","radial");
-        skilljs.attr("class","radial");
-        skillboot.attr("class","radial");
-        skillphotoshop.attr("class","radial");
-        skillillustrator.attr("class","radial");
-    }
+  }
+});
 
-    function start() {
+// Colors
 
-        var rp1 = radialProgress(document.getElementById('skillhtml'))
-                .label("HTML")
-                .onClick(onClick1)
-                .diameter(150)
-                .value(85)
-                .render();
+$('#pb-html').css({'background-color': "#951029"})
+$('#pb-css').css({'background-color': "#951029"})
+$('#pb-js').css({'background-color': "#00A59D"})
+$('#pb-boot').css({'background-color': "#951029"})
+$('#pb-wp').css({'background-color': "#00A59D"})
+$('#pb-ps').css({'background-color': "#951029"})
+$('#pb-ai').css({'background-color': "#951029"})
 
-        var rp2 = radialProgress(document.getElementById('skillcss'))
-                .label("CSS")
-                .onClick(onClick2)
-                .diameter(150)
-                .value(80)
-                .render();
+// Tooltips
 
-        var rp3 = radialProgress(document.getElementById('skilljs'))
-                .label("Javascript/jQuery")
-                .onClick(onClick3)
-                .diameter(150)
-                .value(45)
-                .render();
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
-        var rp4 = radialProgress(document.getElementById('skillboot'))
-                .label("Bootstrap")
-                .onClick(onClick1)
-                .diameter(150)
-                .value(95)
-                .render();
+// Modals
 
-        var rp5 = radialProgress(document.getElementById('skillphotoshop'))
-                .label("Photoshop")
-                .onClick(onClick2)
-                .diameter(150)
-                .value(80)
-                .render();
+$('#open-preston-modal').click(function () {
+    $('#preston-modal').modal('show');
+});
 
-        var rp6 = radialProgress(document.getElementById('skillillustrator'))
-                .label("Illustrator")
-                .onClick(onClick3)
-                .diameter(150)
-                .value(100)
-                .render();
+$('#open-kitten-modal').click(function () {
+    $('#kitten-modal').modal('show');
+});
 
-    }
+$('#open-tech-modal').click(function () {
+    $('#tech-modal').modal('show');
+});
+
+$('#open-trendy-modal').click(function () {
+    $('#trendy-modal').modal('show');
+});
