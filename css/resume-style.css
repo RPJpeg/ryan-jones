@@ -64,12 +64,16 @@ li {
 }
 
 a {
-  color: #E21029;
+  color: #383533;
+  text-decoration: underline;
+}
+
+a span {
+  text-decoration: none;
 }
 
 a:hover {
   color: #951029;
-  text-decoration: none;
 }
 
 
