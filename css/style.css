@@ -221,12 +221,11 @@ video {
 }
 
 .tahoe-bg {
-	background-image: url("../images/tahoe.jpg");
+	background-image: url("../images/subtle.png");
 	background-position: bottom center;
-	background-repeat: no-repeat;
-	background-size: auto;
+	background-repeat: repeat;
 	position:relative;
-	background-size: cover;
+	background-color: #E2DED8;
 }
 
 .light-bg {
@@ -860,13 +859,13 @@ textarea {
 	transform: rotate(20deg);
 }
 
-.new-overlay {
+/*.new-overlay {
 	width: 100%;
 	height: 100%;
 	left: 0;
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.8);
-}
+}*/
 
 .light-text {
 	color: #E2DED8;
@@ -992,8 +991,8 @@ textarea {
 
 .wrapper {
 	max-width: 1400px;
-	min-height: 700px;
-	margin: 0 auto;
+	min-height: 400px;
+	margin: 0 auto 75px auto;
 }
 
 .profile-pic {
@@ -1050,7 +1049,7 @@ textarea {
 }
 
 .modal-body .btn-special:hover {
-	background-color: #951029;
+	background-color: #008079;
 }
 
 .modal-body p {
@@ -1074,4 +1073,6 @@ textarea {
 
 .modal-img-box img {
 	transform: translateY(-100px);
+	margin: 0;
+	width: 100%;
 }
