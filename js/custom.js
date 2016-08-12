@@ -64,6 +64,6 @@ $('#open-tech-modal').click(function () {
     $('#tech-modal').modal('show');
 });
 
-$('#open-trendy-modal').click(function () {
-    $('#trendy-modal').modal('show');
+$('#open-mvrma-modal').click(function () {
+    $('#mvrma-modal').modal('show');
 });
