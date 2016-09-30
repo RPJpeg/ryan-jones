@@ -1,0 +1,10 @@
+@import 'partials/variables';
+@import 'partials/typography';
+@import 'partials/colors';
+@import 'partials/base';
+
+.wrapper {
+  width: 96%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
