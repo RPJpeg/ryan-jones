@@ -67,3 +67,7 @@ $('#open-tech-modal').click(function () {
 $('#open-mvrma-modal').click(function () {
     $('#mvrma-modal').modal('show');
 });
+
+$('#open-uxm-modal').click(function () {
+    $('#uxm-modal').modal('show');
+});
