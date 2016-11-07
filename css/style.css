@@ -1073,3 +1073,22 @@ textarea {
 	margin: 0;
 	width: 100%;
 }
+
+@media screen and (min-width: 768px) {
+	#alignmentFix {
+		transform: translateY(-780px);
+	}
+}
+
+@media screen and (min-width: 990px) {
+	#alignmentFix {
+		transform: translateY(-344px);
+	}
+}
+
+
+@media screen and (min-width: 1200px) {
+	#alignmentFix {
+		transform: translateY(-412px);
+	}
+}

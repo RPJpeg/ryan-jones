@@ -71,3 +71,7 @@ $('#open-mvrma-modal').click(function () {
 $('#open-uxm-modal').click(function () {
     $('#uxm-modal').modal('show');
 });
+
+$('#open-rt-modal').click(function () {
+    $('#rt-modal').modal('show');
+});

@@ -1,0 +1,45 @@
+.darken
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba(0,0,0,.6)
+  z-index: 999
+
+.modal
+  width: 800px
+  background-color: $my-white
+  padding: 30px
+  position: fixed
+  top: 10vh
+  left: calc(50% - 400px)
+  -webkit-box-shadow: 1px 1px 1px 0 $my-light-grey
+  -moz-box-shadow: 1px 1px 1px 0 $my-light-grey
+  box-shadow: 1px 1px 1px 0 $my-light-grey
+  z-index: 1000
+  @include bp-medium
+    width: 400px
+    left: calc(50% - 200px)
+  @include bp-small
+    width: 400px
+    left: calc(50% - 200px)
+.modal, .darken
+
+  h3
+    color: $super-highlight
+
+  .header-list
+    border-top: solid $my-light 2pt
+    padding-top: 25px
+
+  li
+    color: $my-light-grey
+    padding: 3px
+    @include font-size(16px)
+    strong
+      color: $my-black
+    @include bp-medium
+      @include font-size(12px)
+    @include bp-small
+      @include font-size(12px)

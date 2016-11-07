@@ -2,11 +2,14 @@
 .grid {
 	position: relative;
 	margin: 15px auto;
-	padding: 30px 30px;
+	padding: 30px;
 	height: auto;
-	float: left;
 	list-style: none;
 	text-align: center;
+}
+
+.containter {
+	padding: 0 !important;
 }
 
 /* Common style */
