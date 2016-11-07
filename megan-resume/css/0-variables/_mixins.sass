@@ -1,0 +1,101 @@
+// Fonts
+$raleway-font-stack: 'Raleway', sans-serif !default
+$press-font-stack: 'Press Start 2P', cursive
+
+// Spacing
+=standard-padding
+  padding: 30px
+
+=standard-margin
+  margin: 50px
+
+=vertical-padding
+  padding: 30px 0
+
+=veritcal-margin
+  margin: 50px 0
+
+=horizontal-padding
+  padding: 0 30px
+
+=horizontal-margin
+  margin: 0 50px
+
+=no-padding
+  padding: 0
+
+=no-margin
+  margin: 0
+
+=center-block
+  margin-left: auto
+  margin-right: auto
+
+// Floats
+@mixin clearfix
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+// example
+// .box
+//   @include clearfix
+
+// Borders
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius:    $radius
+  -ms-border-radius:     $radius
+  border-radius:         $radius
+
+// example
+// .box
+//   +border-radius(10px)
+
+=transition
+  -webkit-transition: .2s ease
+  -moz-transition: .2s ease
+  -ms-transition: .2s ease
+  -o-transition: .2s ease
+  transition: .2s ease
+
+// example
+// color: gray
+//   @include transition(color .3s ease)
+//   &:hover
+//     color: black
+
+@function calculateRem($size)
+  $remSize: $size / 16px
+  @return $remSize * 1rem
+
+@mixin font-size($size)
+  font-size: $size
+  font-size: calculateRem($size)
+
+// example
+// p
+// @include font-size(14px)
+
+@mixin bp-large
+  @media only screen and (max-width: 70em)
+    @content
+
+@mixin bp-medium
+  @media only screen and (max-width: 60em)
+    @content
+
+@mixin bp-small
+  @media only screen and (max-width: 40em)
+    @content
+
+// example
+// .sidebar
+//   width: 60%
+//   float: left
+//   margin: 0 2% 0 0
+//   @include bp-small
+//     width: 100%
+//     float: none
+//     margin: 0
